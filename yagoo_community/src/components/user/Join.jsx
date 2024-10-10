@@ -1,15 +1,14 @@
-import Header from "../common/Header";
-import Footer from "../common/Footer";
-function Profile(){
+function JoinInput(){
     return(
         <>
-            <Header></Header>
             <div>
-                <h3>프로필</h3>
-                <img />
+                <h2>로고</h2>
+                <h3>회원가입</h3>
                 <form>
                     <p>아이디</p>
                     <input type="text" placeholder="4~15자 이내로 입력해주세요"></input>
+                    <p>비밀번호</p>
+                    <input type="passward" placeholder="최소 10자 이상 입력해주세요"></input>
                     <p>이메일</p>
                     <input type="email" placeholder="admin@yagoo.com"></input>
                     <p>이름</p>
@@ -29,12 +28,23 @@ function Profile(){
                         <option value='키움'>키움</option>
                         <option value='한화'>한화</option>
                     </select>
-                    <input type="button">저장</input>
+                    <div>
+                        <input type="checkbox"></input>전체동의
+                        <p>전체동의를 선택하시면 아래의 모든 약관에 동의하게 됩니다.</p>
+                    </div>
+                    <div>
+                        <input type="checkbox"></input>통합 서비스 이용약관
+                        <a>약관 확인</a>
+                    </div>
+                    <div>
+                        <input type="checkbox"></input>개인정보 처리방침
+                        <a>약관 확인</a>
+                    </div>
+                    <input type="button">회원가입</input>
                 </form>
             </div>
-            <Footer></Footer>
         </>
     )
 }
 
-export default Profile;
+export default Join;
